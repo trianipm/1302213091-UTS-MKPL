@@ -17,9 +17,18 @@ public class Main {
         System.out.println("Address: " + employee.getAddress());
         System.out.println("Monthly Salary: Rp " + employee.getMonthlySalary());
 
-        // Menghitung dan menampilkan jumlah pajak yang harus dibayarkan setahun
+        // Menghitung dan menampilkan jumlah pajak yang harus dibayarkan setahun oleh
+        // pegawai
         int tax = TaxFunction.calculateTax(employee.getMonthlySalary(), 0, 12, 0, employee.isMarried(),
                 employee.getNumberOfChildren());
         System.out.println("Yearly Tax: Rp " + tax);
     }
 }
+
+// Hasil output:
+// Employee ID: E001
+// Name: Triani Putri Mumpuni
+// Gender: Perempuan
+// Address: 123 Street
+// Monthly Salary: Rp 5000000
+// Yearly Tax: Rp 300000
