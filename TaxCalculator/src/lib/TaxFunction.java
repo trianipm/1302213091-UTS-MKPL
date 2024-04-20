@@ -21,4 +21,11 @@ public class TaxFunction {
 		return Math.max(0, (int) Math.round(0.05 * taxableIncome));
 	}
 
+	// Memeriksa apakah jumlah bulan kerja melebihi 12 bulan
+	private static void checkWorkingMonths(int numberOfMonthWorking) {
+		if (numberOfMonthWorking > 12) {
+			throw new IllegalArgumentException("Error: More than 12 months working per year");
+		}
+	}
+
 }
