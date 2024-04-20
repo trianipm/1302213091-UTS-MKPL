@@ -110,23 +110,22 @@ public class Employee {
 		final int GRADE_3_SALARY = 7000000;
 		final double FOREIGNER_MULTIPLIER = 1.5;
 
-		// int baseSalary;
-		// switch (grade) {
-		// case 1:
-		// baseSalary = GRADE_1_SALARY;
-		// break;
-		// case 2:
-		// baseSalary = GRADE_2_SALARY;
-		// break;
-		// case 3:
-		// baseSalary = GRADE_3_SALARY;
-		// break;
-		// default:
-		// throw new IllegalArgumentException("Invalid grade provided.");
-		// }
+		int baseSalary;
+		switch (grade) {
+			case 1:
+				baseSalary = GRADE_1_SALARY;
+				break;
+			case 2:
+				baseSalary = GRADE_2_SALARY;
+				break;
+			case 3:
+				baseSalary = GRADE_3_SALARY;
+				break;
+			default:
+				throw new IllegalArgumentException("Invalid grade provided.");
+		}
 
-		// int salary = isForeigner ? (int) (baseSalary * FOREIGNER_MULTIPLIER) :
-		// baseSalary;
+		int salary = isForeigner ? (int) (baseSalary * FOREIGNER_MULTIPLIER) : baseSalary;
 
 		return salary;
 	}
