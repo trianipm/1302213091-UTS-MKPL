@@ -16,5 +16,10 @@ public class Main {
         System.out.println("Gender: " + (employee.getGender() ? "Perempuan" : "Laki-laki"));
         System.out.println("Address: " + employee.getAddress());
         System.out.println("Monthly Salary: Rp " + employee.getMonthlySalary());
+
+        // Menghitung dan menampilkan jumlah pajak yang harus dibayarkan setahun
+        int tax = TaxFunction.calculateTax(employee.getMonthlySalary(), 0, 12, 0, employee.isMarried(),
+                employee.getNumberOfChildren());
+        System.out.println("Yearly Tax: Rp " + tax);
     }
 }
