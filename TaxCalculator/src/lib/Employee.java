@@ -72,6 +72,38 @@ public class Employee {
 		return lastName;
 	}
 
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setDayJoined(int dayJoined) {
+		this.dayJoined = dayJoined;
+	}
+
+	public int getDayJoined() {
+		return dayJoined;
+	}
+
+	public void setGender(boolean gender) {
+		this.gender = gender;
+	}
+
+	public boolean getGender() {
+		return gender;
+	}
+
+	public void setSpouseName(String spouseName) {
+		this.spouseName = spouseName;
+	}
+
+	public String getSpouseName() {
+		return spouseName;
+	}
+
 	/**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya
 	 * (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3:
