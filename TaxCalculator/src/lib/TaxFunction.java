@@ -28,4 +28,9 @@ public class TaxFunction {
 		}
 	}
 
+	// Membatasi jumlah anak maksimal yang diproses menjadi 3
+	private static int limitNumberOfChildren(int numberOfChildren) {
+		return Math.min(numberOfChildren, 3);
+	}
+
 }
