@@ -169,4 +169,13 @@ public class Employee {
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible,
 				spouseIdNumber.equals(""), childIdNumbers.size());
 	}
+
+	public int getNumberOfChildren() {
+		return childNames.size(); // Mengembalikan jumlah anak dari list childNames
+	}
+
+	public boolean isMarried() {
+		return (spouseName != null && !spouseName.isEmpty()); // Mengembalikan true jika nama pasangan tidak null atau
+																// tidak kosong
+	}
 }
