@@ -104,6 +104,33 @@ public class Employee {
 		return spouseName;
 	}
 
+	private int calculateGradeSalary(int grade) {
+		final int GRADE_1_SALARY = 3000000;
+		final int GRADE_2_SALARY = 5000000;
+		final int GRADE_3_SALARY = 7000000;
+		final double FOREIGNER_MULTIPLIER = 1.5;
+
+		// int baseSalary;
+		// switch (grade) {
+		// case 1:
+		// baseSalary = GRADE_1_SALARY;
+		// break;
+		// case 2:
+		// baseSalary = GRADE_2_SALARY;
+		// break;
+		// case 3:
+		// baseSalary = GRADE_3_SALARY;
+		// break;
+		// default:
+		// throw new IllegalArgumentException("Invalid grade provided.");
+		// }
+
+		// int salary = isForeigner ? (int) (baseSalary * FOREIGNER_MULTIPLIER) :
+		// baseSalary;
+
+		return salary;
+	}
+
 	/**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya
 	 * (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3:
