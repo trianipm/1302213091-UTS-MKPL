@@ -33,4 +33,16 @@ public class TaxFunction {
 		return Math.min(numberOfChildren, 3);
 	}
 
+	// Menghitung penghasilan tidak kena pajak
+	private static int calculateTaxExemption(boolean isMarried, int numberOfChildren) {
+		int taxExemption = 54000000; // Penghasilan tidak kena pajak default
+
+		if (isMarried) {
+			taxExemption += 4500000; // Tambahan penghasilan tidak kena pajak jika menikah
+			taxExemption += numberOfChildren * 1500000; // Tambahan penghasilan tidak kena pajak per anak
+		}
+
+		return taxExemption;
+	}
+
 }
