@@ -45,4 +45,16 @@ public class TaxFunction {
 		return taxExemption;
 	}
 
+	// Menghitung penghasilan yang dikenai pajak
+	private static int calculateTaxableIncome(int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking,
+			int deductible, boolean isMarried, int taxExemption, int numberOfChildren) {
+		int taxableIncome = ((monthlySalary + otherMonthlyIncome) * numberOfMonthWorking) - deductible - taxExemption;
+
+		if (taxableIncome < 0) {
+			return 0;
+		} else {
+			return taxableIncome;
+		}
+	}
+
 }
